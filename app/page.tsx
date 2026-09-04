@@ -137,12 +137,28 @@ export default function Home() {
         </div>
       </section>
 
+      <a
+        className="whatsapp-float"
+        href="https://wa.me/5491154194819?text=%F0%9F%9A%98%20Hola%20CBR!%20Me%20gustar%C3%ADa%20consultar%20sobre%20sus%20servicios%20de%20taller%20premium."
+        target="_blank"
+        rel="noreferrer"
+        aria-label="Consultar a CBR Garage por WhatsApp"
+      >
+        <span className="whatsapp-hint">¿Necesitás ayuda?</span>
+        <svg viewBox="0 0 32 32" aria-hidden="true">
+          <path fill="currentColor" d="M16.04 3A12.93 12.93 0 0 0 5.1 22.82L3 29l6.38-2.05A12.98 12.98 0 1 0 16.04 3Zm0 2.18a10.8 10.8 0 1 1-5.5 20.1l-.39-.23-3.79 1.22 1.24-3.68-.25-.4A10.78 10.78 0 0 1 16.04 5.18Zm-5.18 4.74c-.24 0-.63.09-.96.45-.33.36-1.26 1.23-1.26 3s1.29 3.48 1.47 3.72c.18.24 2.54 3.88 6.16 5.44.86.37 1.53.59 2.05.76.86.27 1.65.23 2.27.14.69-.1 2.13-.87 2.43-1.71.3-.84.3-1.56.21-1.71-.09-.15-.33-.24-.69-.42-.36-.18-2.13-1.05-2.46-1.17-.33-.12-.57-.18-.81.18-.24.36-.93 1.17-1.14 1.41-.21.24-.42.27-.78.09-.36-.18-1.52-.56-2.89-1.79a10.8 10.8 0 0 1-2-2.49c-.21-.36-.02-.55.16-.73.16-.16.36-.42.54-.63.18-.21.24-.36.36-.6.12-.24.06-.45-.03-.63-.09-.18-.8-1.96-1.11-2.67-.29-.7-.59-.6-.81-.61h-.69Z" />
+        </svg>
+      </a>
+
       <footer>
         <div className="footer-grid">
           <div className="footer-brand">
             <a className="brand" href="#inicio" aria-label="CBR Garage, inicio"><img className="brand-logo" src="/cbr-logo.png" alt="CBR Garage" /></a>
             <p>Todos los servicios para tu auto, en un solo lugar. Atención directa y trabajo de calidad en CABA.</p>
             <div className="footer-socials">
+              <a href="https://www.instagram.com/cbrgarage.ba/" target="_blank" rel="noreferrer" aria-label="CBR Garage en Instagram">
+                <svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true"><path fill="none" stroke="currentColor" strokeWidth="2" d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Z"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" strokeWidth="2"/><circle cx="18" cy="6" r="1" fill="currentColor"/></svg>
+              </a>
               <a href="https://wa.me/5491154194819?text=Hola%20CBR%20Garage" target="_blank" rel="noreferrer" aria-label="Escribir por WhatsApp"><MessageCircle size={19} /></a>
               <a href="mailto:Cbrgarage23@gmail.com" aria-label="Enviar email"><Mail size={19} /></a>
             </div>
