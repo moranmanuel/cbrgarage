@@ -6,6 +6,7 @@ import {
   Hammer,
   Mail,
   MapPin,
+  MessageCircle,
   Navigation,
   Paintbrush,
   PanelsTopLeft,
@@ -137,10 +138,32 @@ export default function Home() {
       </section>
 
       <footer>
-        <a className="brand" href="#inicio" aria-label="CBR Garage, inicio"><img className="brand-logo" src="/cbr-logo.png" alt="CBR Garage" /></a>
-        <p>Todos los servicios para tu auto, en un solo lugar.</p>
-        <div><a href="#servicios">Servicios</a><a href="#nosotros">Nosotros</a><a href="#contacto">Contacto</a></div>
-        <small>© 2026 CBR Garage. Todos los derechos reservados.</small>
+        <div className="footer-grid">
+          <div className="footer-brand">
+            <a className="brand" href="#inicio" aria-label="CBR Garage, inicio"><img className="brand-logo" src="/cbr-logo.png" alt="CBR Garage" /></a>
+            <p>Todos los servicios para tu auto, en un solo lugar. Atención directa y trabajo de calidad en CABA.</p>
+            <div className="footer-socials">
+              <a href="https://wa.me/5491154194819?text=Hola%20CBR%20Garage" target="_blank" rel="noreferrer" aria-label="Escribir por WhatsApp"><MessageCircle size={19} /></a>
+              <a href="mailto:Cbrgarage23@gmail.com" aria-label="Enviar email"><Mail size={19} /></a>
+            </div>
+          </div>
+          <div className="footer-column">
+            <h3>Navegación</h3>
+            <a href="#inicio">Inicio</a><a href="#servicios">Servicios</a><a href="#nosotros">Nosotros</a><a href="#contacto">Contacto</a>
+          </div>
+          <div className="footer-column footer-services">
+            <h3>Servicios</h3>
+            <a href="#servicios">Service completo</a><a href="#servicios">Service de caja</a><a href="#servicios">Chapa y pintura</a><a href="#servicios">Sacabollos</a><a href="#servicios">Polarizado</a>
+          </div>
+          <div className="footer-column footer-contact">
+            <h3>Contacto</h3>
+            <a href="https://www.google.com/maps/search/?api=1&query=Darwin+238+CABA+Argentina" target="_blank" rel="noreferrer"><MapPin size={18} /><span>Darwin 238, CABA</span></a>
+            <a href="tel:+541154194819"><Phone size={18} /><span>11 5419-4819</span></a>
+            <a href="mailto:Cbrgarage23@gmail.com"><Mail size={18} /><span>Cbrgarage23@gmail.com</span></a>
+            <div><Clock3 size={18} /><span>Lunes a viernes<br />8:00–17:00</span></div>
+          </div>
+        </div>
+        <div className="footer-bottom"><small>© 2026 CBR Garage. Todos los derechos reservados.</small><a href="#inicio">Volver arriba ↑</a></div>
       </footer>
     </main>
   );
