@@ -33,7 +33,7 @@ export default function Home() {
         <nav aria-label="Navegación principal">
           <a href="#servicios">Servicios</a><a href="#nosotros">Nosotros</a><a href="#contacto">Contacto</a>
         </nav>
-        <a className="header-cta" href="mailto:contacto@cbrgarage.com.ar?subject=Consulta%20desde%20la%20web">
+        <a className="header-cta" href="mailto:Cbrgarage23@gmail.com?subject=Consulta%20desde%20la%20web">
           Consultar <ArrowRight size={17} />
         </a>
       </header>
@@ -46,7 +46,7 @@ export default function Home() {
           <p className="hero-lead">Mecánica, estética y cuidado integral con atención directa, trabajo claro y el detalle que tu vehículo merece.</p>
           <div className="hero-actions">
             <a className="button button-primary" href="#servicios">Ver servicios <ArrowRight size={19} /></a>
-            <a className="button button-ghost" href="mailto:contacto@cbrgarage.com.ar?subject=Quiero%20consultar%20por%20un%20servicio">Enviar una consulta</a>
+            <a className="button button-ghost" href="mailto:Cbrgarage23@gmail.com?subject=Quiero%20consultar%20por%20un%20servicio">Enviar una consulta</a>
           </div>
           <div className="hero-facts">
             <div><strong>7</strong><span>servicios integrales</span></div>
@@ -69,12 +69,12 @@ export default function Home() {
             <article className="service-card" key={title}>
               <div className="service-top"><Icon size={27} strokeWidth={1.7} /><span>{number}</span></div>
               <h3>{title}</h3><p>{text}</p>
-              <a href={`mailto:contacto@cbrgarage.com.ar?subject=Consulta%20por%20${encodeURIComponent(title)}`}>Consultar <ArrowRight size={16} /></a>
+              <a href={`mailto:Cbrgarage23@gmail.com?subject=Consulta%20por%20${encodeURIComponent(title)}`}>Consultar <ArrowRight size={16} /></a>
             </article>
           ))}
           <article className="service-card service-card-cta">
             <span>¿No encontrás lo que necesitás?</span><h3>Contanos qué le pasa a tu auto.</h3>
-            <a href="mailto:contacto@cbrgarage.com.ar?subject=Consulta%20general">Escribir al garage <ArrowRight size={18} /></a>
+            <a href="mailto:Cbrgarage23@gmail.com?subject=Consulta%20general">Escribir al garage <ArrowRight size={18} /></a>
           </article>
         </div>
       </section>
@@ -96,11 +96,11 @@ export default function Home() {
         <div>
           <p className="eyebrow light"><span /> Contacto</p><h2>¿Tu auto necesita<br />una puesta a punto?</h2>
           <p className="contact-lead">Escribinos por email. Contanos el modelo de tu auto y qué servicio necesitás para poder orientarte mejor.</p>
-          <a className="button button-light" href="mailto:contacto@cbrgarage.com.ar?subject=Consulta%20desde%20la%20web%20de%20CBR%20Garage"><Mail size={19} /> contacto@cbrgarage.com.ar</a>
+          <a className="button button-light" href="mailto:Cbrgarage23@gmail.com?subject=Consulta%20desde%20la%20web%20de%20CBR%20Garage"><Mail size={19} /> Cbrgarage23@gmail.com</a>
         </div>
         <aside className="contact-card">
-          <div><MapPin size={20} /><span><small>Una única sede</small>Dirección a confirmar</span></div>
-          <div><Clock3 size={20} /><span><small>Horarios</small>Próximamente</span></div>
+          <div><MapPin size={20} /><span><small>Una única sede</small>Darwin 238</span></div>
+          <div><Clock3 size={20} /><span><small>Horarios</small>Lunes a viernes · 8:00–17:00</span></div>
           <div><Mail size={20} /><span><small>Consultas</small>Respuesta directa por email</span></div>
         </aside>
       </section>
