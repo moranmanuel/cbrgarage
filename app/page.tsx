@@ -6,6 +6,7 @@ import {
   Hammer,
   Mail,
   MapPin,
+  Navigation,
   Paintbrush,
   PanelsTopLeft,
   Phone,
@@ -13,6 +14,7 @@ import {
   Sparkles,
   Wrench,
 } from 'lucide-react';
+import { Countdown } from '@/components/countdown';
 
 const services = [
   { icon: Wrench, number: '01', title: 'Service completo', text: 'Mantenimiento integral para que tu vehículo rinda mejor y por más tiempo.' },
@@ -45,7 +47,7 @@ export default function Home() {
           <p className="hero-lead">Mecánica, estética y cuidado integral con atención directa, trabajo claro y el detalle que tu vehículo merece.</p>
           <div className="hero-actions">
             <a className="button button-primary" href="#servicios">Ver servicios <ArrowRight size={19} /></a>
-            <a className="button button-ghost" href="mailto:Cbrgarage23@gmail.com?subject=Quiero%20consultar%20por%20un%20servicio">Enviar una consulta</a>
+            <a className="button button-ghost" href={`https://wa.me/5491154194819?text=${encodeURIComponent(`Hola CBR Garage, tenia una consulta.`)}`} target="_blank">Enviar una consulta</a>
           </div>
           <div className="hero-facts">
             <div><strong>7</strong><span>servicios integrales</span></div>
@@ -54,7 +56,7 @@ export default function Home() {
         </div>
         <div className="hero-visual" aria-label="Interior de CBR Garage">
           <img src="/cbr-services.png" alt="Interior de CBR Garage y presentación de sus servicios" />
-          <div className="opening-card"><span className="pulse" /><div><small>Muy pronto</small><strong>Abrimos en una semana</strong></div></div>
+          <div className="opening-card"><Countdown /></div>
         </div>
       </section>
 
@@ -79,7 +81,7 @@ export default function Home() {
           ))}
           <article className="service-card service-card-cta">
             <span>¿No encontrás lo que necesitás?</span><h3>Contanos qué le pasa a tu auto.</h3>
-            <a href="mailto:Cbrgarage23@gmail.com?subject=Consulta%20general">Escribir al garage <ArrowRight size={18} /></a>
+            <a href={`https://wa.me/5491154194819?text=${encodeURIComponent("Hola CBR Garage, tengo una consulta.")}`}>Escribir al garage <ArrowRight size={18} /></a>
           </article>
         </div>
       </section>
@@ -112,6 +114,26 @@ export default function Home() {
           <div><Phone size={20} /><span><small>Teléfono</small><a href="tel:+541154194819">11 5419-4819</a></span></div>
           <div><Mail size={20} /><span><small>Consultas</small>Respuesta directa por email</span></div>
         </aside>
+      </section>
+
+      <section className="location section" aria-labelledby="ubicacion-title">
+        <div className="location-copy">
+          <p className="eyebrow"><span /> Cómo llegar</p>
+          <h2 id="ubicacion-title">Encontranos en<br /><em>Darwin 238.</em></h2>
+          <p>Estamos en CABA. Abrimos de lunes a viernes, de 8:00 a 17:00.</p>
+          <a className="button button-primary" href="https://www.google.com/maps/search/?api=1&query=Darwin+238+CABA+Argentina" target="_blank" rel="noreferrer">
+            <Navigation size={18} /> Cómo llegar
+          </a>
+        </div>
+        <div className="map-frame">
+          <iframe
+            title="Mapa de CBR Garage en Darwin 238, CABA"
+            src="https://www.google.com/maps?q=Darwin+238,+CABA,+Argentina&output=embed"
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            allowFullScreen
+          />
+        </div>
       </section>
 
       <footer>
