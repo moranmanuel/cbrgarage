@@ -8,6 +8,7 @@ import {
   MapPin,
   Paintbrush,
   PanelsTopLeft,
+  Phone,
   ShieldCheck,
   Sparkles,
   Wrench,
@@ -27,14 +28,12 @@ export default function Home() {
   return (
     <main>
       <header className="site-header">
-        <a className="brand" href="#inicio" aria-label="CBR Garage, inicio">
-          <span className="brand-mark">CBR</span><span className="brand-word">GARAGE</span>
-        </a>
+        <a className="brand" href="#inicio" aria-label="CBR Garage, inicio"><img className="brand-logo" src="/cbr-logo.png" alt="CBR Garage" /></a>
         <nav aria-label="Navegación principal">
           <a href="#servicios">Servicios</a><a href="#nosotros">Nosotros</a><a href="#contacto">Contacto</a>
         </nav>
-        <a className="header-cta" href="mailto:Cbrgarage23@gmail.com?subject=Consulta%20desde%20la%20web">
-          Consultar <ArrowRight size={17} />
+        <a className="header-cta" href="tel:+541154194819">
+          Llamar <Phone size={17} />
         </a>
       </header>
 
@@ -96,17 +95,21 @@ export default function Home() {
         <div>
           <p className="eyebrow light"><span /> Contacto</p><h2>¿Tu auto necesita<br />una puesta a punto?</h2>
           <p className="contact-lead">Escribinos por email. Contanos el modelo de tu auto y qué servicio necesitás para poder orientarte mejor.</p>
-          <a className="button button-light" href="mailto:Cbrgarage23@gmail.com?subject=Consulta%20desde%20la%20web%20de%20CBR%20Garage"><Mail size={19} /> Cbrgarage23@gmail.com</a>
+          <div className="contact-actions">
+            <a className="button button-light" href="tel:+541154194819"><Phone size={19} /> 11 5419-4819</a>
+            <a className="button button-outline-light" href="mailto:Cbrgarage23@gmail.com?subject=Consulta%20desde%20la%20web%20de%20CBR%20Garage"><Mail size={19} /> Enviar email</a>
+          </div>
         </div>
         <aside className="contact-card">
           <div><MapPin size={20} /><span><small>Una única sede</small>Darwin 238</span></div>
           <div><Clock3 size={20} /><span><small>Horarios</small>Lunes a viernes · 8:00–17:00</span></div>
+          <div><Phone size={20} /><span><small>Teléfono</small><a href="tel:+541154194819">11 5419-4819</a></span></div>
           <div><Mail size={20} /><span><small>Consultas</small>Respuesta directa por email</span></div>
         </aside>
       </section>
 
       <footer>
-        <a className="brand" href="#inicio"><span className="brand-mark">CBR</span><span className="brand-word">GARAGE</span></a>
+        <a className="brand" href="#inicio" aria-label="CBR Garage, inicio"><img className="brand-logo" src="/cbr-logo.png" alt="CBR Garage" /></a>
         <p>Todos los servicios para tu auto, en un solo lugar.</p>
         <div><a href="#servicios">Servicios</a><a href="#nosotros">Nosotros</a><a href="#contacto">Contacto</a></div>
         <small>© 2026 CBR Garage. Todos los derechos reservados.</small>
