@@ -68,7 +68,13 @@ export default function Home() {
             <article className="service-card" key={title}>
               <div className="service-top"><Icon size={27} strokeWidth={1.7} /><span>{number}</span></div>
               <h3>{title}</h3><p>{text}</p>
-              <a href={`mailto:Cbrgarage23@gmail.com?subject=Consulta%20por%20${encodeURIComponent(title)}`}>Consultar <ArrowRight size={16} /></a>
+              <a
+                href={`https://wa.me/5491154194819?text=${encodeURIComponent(`Hola CBR Garage, quisiera consultar por ${title}.`)}`}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Consultar <ArrowRight size={16} />
+              </a>
             </article>
           ))}
           <article className="service-card service-card-cta">
