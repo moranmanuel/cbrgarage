@@ -18,7 +18,7 @@ function getRemaining(): Remaining | null {
 }
 
 export function Countdown() {
-  const [remaining, setRemaining] = useState<Remaining | undefined>();
+  const [remaining, setRemaining] = useState<Remaining | null | undefined>();
 
   useEffect(() => {
     const update = () => setRemaining(getRemaining());

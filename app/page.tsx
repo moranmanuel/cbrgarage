@@ -177,11 +177,11 @@ export default function Home() {
           </div>
           <div className="footer-column">
             <h3>Navegación</h3>
-            <a href="#inicio">Inicio</a><a href="#servicios">Servicios</a><a href="#nosotros">Nosotros</a><a href="#marcas">Marcas</a><a href="#contacto">Contacto</a>
+            <a href="#inicio">Inicio</a><a href="#servicios">Servicios</a><a href="#nosotros">Nosotros</a><a href="#marcas">Marcas</a>
           </div>
           <div className="footer-column footer-services">
             <h3>Servicios</h3>
-            <p href="#servicios">Service completo</p><p href="#servicios">Service de caja</p><p href="#servicios">Chapa y pintura</p><p href="#servicios">Sacabollos</p><p href="#servicios">Polarizado</p>
+            <p>Service completo</p><p>Service de caja</p><p>Chapa y pintura</p><p>Sacabollos</p><p>Polarizado</p>
           </div>
           <div className="footer-column footer-contact">
             <h3>Contacto</h3>
