@@ -4,7 +4,6 @@ import {
   Clock3,
   Gauge,
   Hammer,
-  House,
   Mail,
   MapPin,
   MessageCircle,
@@ -47,11 +46,8 @@ export default function Home() {
       <header className="site-header">
         <a className="brand" href="#inicio" aria-label="CBR Garage, inicio"><img className="brand-logo" src="/cbr-logo-transparent.png" alt="CBR Garage" /></a>
         <nav aria-label="Navegación principal">
-          <a href="#servicios">Servicios</a><a href="#nosotros">Nosotros</a><a href="#marcas">Marcas</a><a href="#contacto">Contacto</a>
+          <a href="#inicio">Inicio</a><a href="#servicios">Servicios</a><a href="#nosotros">Nosotros</a><a href="#marcas">Marcas</a><a href="#contacto">Contacto</a>
         </nav>
-        <a className="header-cta" href="#inicio">
-          Inicio <House size={17} />
-        </a>
       </header>
 
       <section className="hero" id="inicio">
