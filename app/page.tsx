@@ -4,6 +4,7 @@ import {
   Clock3,
   Gauge,
   Hammer,
+  House,
   Mail,
   MapPin,
   MessageCircle,
@@ -44,12 +45,12 @@ export default function Home() {
   return (
     <main>
       <header className="site-header">
-        <a className="brand" href="#inicio" aria-label="CBR Garage, inicio"><img className="brand-logo" src="/cbr-logo.png" alt="CBR Garage" /></a>
+        <a className="brand" href="#inicio" aria-label="CBR Garage, inicio"><img className="brand-logo" src="/cbr-logo-transparent.png" alt="CBR Garage" /></a>
         <nav aria-label="Navegación principal">
           <a href="#servicios">Servicios</a><a href="#nosotros">Nosotros</a><a href="#marcas">Marcas</a><a href="#contacto">Contacto</a>
         </nav>
-        <a className="header-cta" href="tel:+541154194819">
-          Llamar <Phone size={17} />
+        <a className="header-cta" href="#inicio">
+          Inicio <House size={17} />
         </a>
       </header>
 
@@ -165,7 +166,7 @@ export default function Home() {
       <footer id="contacto">
         <div className="footer-grid">
           <div className="footer-brand">
-            <a className="brand" href="#inicio" aria-label="CBR Garage, inicio"><img className="brand-logo" src="/cbr-logo.png" alt="CBR Garage" /></a>
+            <a className="brand" href="#inicio" aria-label="CBR Garage, inicio"><img className="brand-logo" src="/cbr-logo-transparent.png" alt="CBR Garage" /></a>
             <p>Todos los servicios para tu auto, en un solo lugar. Atención directa y trabajo de calidad en CABA.</p>
             <div className="footer-socials">
               <a href="https://www.instagram.com/cbrgarage.ba/" target="_blank" rel="noreferrer" aria-label="CBR Garage en Instagram">
