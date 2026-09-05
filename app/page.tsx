@@ -121,7 +121,6 @@ export default function Home() {
       </section>
 
       <section className="about section" id="nosotros">
-        <div className="about-label">CBR / 001</div>
         <div className="about-copy"><p className="eyebrow"><span /> Nuestra forma de trabajar</p><h2>Un garage nuevo.<br /><em>Una manera más clara.</em></h2></div>
         <div className="about-details">
           <p>CBR Garage nace para simplificar el cuidado del auto: diagnóstico claro, comunicación directa y soluciones integrales en una única sede.</p>
