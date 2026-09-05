@@ -1,5 +1,6 @@
 import {
   ArrowRight,
+  CalendarDays,
   CheckCircle2,
   Clock3,
   Gauge,
@@ -53,20 +54,34 @@ export default function Home() {
       <section className="hero" id="inicio">
         <div className="hero-grid" aria-hidden="true" />
         <div className="hero-copy">
-          <p className="eyebrow"><span /> Próxima apertura</p>
-          <h1>Todo para tu auto.<br /><em>En un solo lugar.</em></h1>
-          <p className="hero-lead">Mecánica, estética y cuidado integral con atención directa, trabajo claro y el detalle que tu vehículo merece.</p>
+          <p className="eyebrow"><span /> Abrimos el 14 de septiembre</p>
+          <h1>Tu auto,<br /><em>en buenas manos</em><br />desde el primer día.</h1>
+          <p className="hero-lead">Mecánica, diagnóstico y cuidado integral con atención directa. Nuestra agenda ya está abierta para turnos desde la inauguración.</p>
           <div className="hero-actions">
-            <a className="button button-primary" href="#servicios">Ver servicios <ArrowRight size={19} /></a>
-            <a className="button button-ghost" href={`https://wa.me/5491150526325?text=${encodeURIComponent(`Hola CBR Garage, tenia una consulta.`)}`} target="_blank">Enviar una consulta</a>
+            <a
+              className="button button-primary"
+              href={`https://wa.me/5491150526325?text=${encodeURIComponent('🚘 Hola CBR! Quiero reservar un turno.\n\nVehículo:\nServicio:\nFecha preferida:')}`}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <CalendarDays size={19} /> Reservar turno
+            </a>
+            <a className="button button-ghost" href="https://www.google.com/maps/search/?api=1&query=Darwin+238+CABA+Argentina" target="_blank" rel="noreferrer">
+              <Navigation size={18} /> Cómo llegar
+            </a>
           </div>
-          <div className="hero-facts">
-            <div><strong>7</strong><span>servicios integrales</span></div>
-            <div><strong>1</strong><span>sede, atención directa</span></div>
+          <div className="hero-meta">
+            <div><small>Dirección</small><strong>Darwin 238, CABA</strong></div>
+            <div><small>Horario</small><strong>Lun a vie · 8:00–17:00</strong></div>
           </div>
         </div>
-        <div className="hero-visual" aria-label="Interior de CBR Garage">
-          <img src="/cbr-services.png" alt="Interior de CBR Garage y presentación de sus servicios" />
+        <div className="hero-visual" aria-label="CBR Garage abre el 14 de septiembre">
+          <img className="hero-logo" src="/cbr-logo-transparent.png" alt="CBR Garage" />
+          <div className="launch-date" aria-hidden="true">
+            <span>14</span>
+            <div><strong>SEP</strong><small>2026</small></div>
+          </div>
+          <p className="launch-note">Agenda abierta para turnos desde la inauguración</p>
           <div className="opening-card"><Countdown /></div>
         </div>
       </section>
