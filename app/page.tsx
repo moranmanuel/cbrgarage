@@ -108,8 +108,14 @@ export default function Home() {
             </article>
           ))}
           <article className="service-card service-card-cta">
-            <span>¿No encontrás lo que necesitás?</span><h3>Contanos qué le pasa a tu auto.</h3>
-            <a href={`https://wa.me/5491150526325?text=${encodeURIComponent("Hola CBR Garage! Tengo una consulta sobre mi auto.")}`}>Escribir al garage <ArrowRight size={18} /></a>
+            <span>Compra y venta</span><h3>¿Querés comprar o vender tu auto?</h3>
+            <a
+              href={`https://wa.me/5491150526325?text=${encodeURIComponent('Hola CBR Garage! Quisiera consultar por el servicio de compra y venta de vehículos.')}`}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Consultar <ArrowRight size={18} />
+            </a>
           </article>
         </div>
       </section>
@@ -195,7 +201,7 @@ export default function Home() {
           </div>
           <div className="footer-column footer-services">
             <h3>Servicios</h3>
-            <p>Service completo</p><p>Service de caja</p><p>Chapa y pintura</p><p>Sacabollos</p><p>Polarizado</p>
+            <p>Service completo</p><p>Service de caja</p><p>Chapa y pintura</p><p>Sacabollos</p><p>Polarizado</p><p>Compra y venta</p>
           </div>
           <div className="footer-column footer-contact">
             <h3>Contacto</h3>
