@@ -27,13 +27,15 @@ const services = [
   { icon: ShieldCheck, number: '07', title: 'Cambio de cristales', text: 'Reemplazo seguro de parabrisas y cristales, con respaldo y garantía.' },
 ];
 
+const brands = ['Honda', 'Toyota', 'Nissan', 'Subaru', 'Suzuki', 'Mazda', 'Mitsubishi', 'Ford', 'BMW', 'Mercedes-Benz'];
+
 export default function Home() {
   return (
     <main>
       <header className="site-header">
         <a className="brand" href="#inicio" aria-label="CBR Garage, inicio"><img className="brand-logo" src="/cbr-logo.png" alt="CBR Garage" /></a>
         <nav aria-label="Navegación principal">
-          <a href="#servicios">Servicios</a><a href="#nosotros">Nosotros</a><a href="#contacto">Contacto</a>
+          <a href="#servicios">Servicios</a><a href="#nosotros">Nosotros</a><a href="#marcas">Marcas</a><a href="#contacto">Contacto</a>
         </nav>
         <a className="header-cta" href="tel:+541154194819">
           Llamar <Phone size={17} />
@@ -100,21 +102,15 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="contact section" id="contacto">
-        <div>
-          <p className="eyebrow light"><span /> Contacto</p><h2>¿Tu auto necesita<br />una puesta a punto?</h2>
-          <p className="contact-lead">Escribinos por email. Contanos el modelo de tu auto y qué servicio necesitás para poder orientarte mejor.</p>
-          <div className="contact-actions">
-            <a className="button button-light" href="tel:+541154194819"><Phone size={19} /> 11 5419-4819</a>
-            <a className="button button-outline-light" href="mailto:Cbrgarage23@gmail.com?subject=Consulta%20desde%20la%20web%20de%20CBR%20Garage"><Mail size={19} /> Enviar email</a>
-          </div>
+      <section className="brands section" id="marcas" aria-labelledby="marcas-title">
+        <div className="brands-heading">
+          <p className="eyebrow"><span /> Experiencia multimarca</p>
+          <h2 id="marcas-title">Trabajamos con<br /><em>todas las marcas.</em></h2>
+          <p>Mecánica general y diagnóstico para vehículos nacionales e importados.</p>
         </div>
-        <aside className="contact-card">
-          <div><MapPin size={20} /><span><small>Una única sede</small>Darwin 238</span></div>
-          <div><Clock3 size={20} /><span><small>Horarios</small>Lunes a viernes · 8:00–17:00</span></div>
-          <div><Phone size={20} /><span><small>Teléfono</small><a href="tel:+541154194819">11 5419-4819</a></span></div>
-          <div><Mail size={20} /><span><small>Consultas</small>Respuesta directa por email</span></div>
-        </aside>
+        <div className="brand-wall" aria-label="Marcas que atendemos">
+          {brands.map((brand, index) => <span key={brand} data-index={String(index + 1).padStart(2, '0')}>{brand}</span>)}
+        </div>
       </section>
 
       <section className="location section" aria-labelledby="ubicacion-title">
@@ -150,7 +146,7 @@ export default function Home() {
         </svg>
       </a>
 
-      <footer>
+      <footer id="contacto">
         <div className="footer-grid">
           <div className="footer-brand">
             <a className="brand" href="#inicio" aria-label="CBR Garage, inicio"><img className="brand-logo" src="/cbr-logo.png" alt="CBR Garage" /></a>
@@ -165,11 +161,11 @@ export default function Home() {
           </div>
           <div className="footer-column">
             <h3>Navegación</h3>
-            <a href="#inicio">Inicio</a><a href="#servicios">Servicios</a><a href="#nosotros">Nosotros</a><a href="#contacto">Contacto</a>
+            <a href="#inicio">Inicio</a><a href="#servicios">Servicios</a><a href="#nosotros">Nosotros</a><a href="#marcas">Marcas</a><a href="#contacto">Contacto</a>
           </div>
           <div className="footer-column footer-services">
             <h3>Servicios</h3>
-            <a href="#servicios">Service completo</a><a href="#servicios">Service de caja</a><a href="#servicios">Chapa y pintura</a><a href="#servicios">Sacabollos</a><a href="#servicios">Polarizado</a>
+            <p href="#servicios">Service completo</p><p href="#servicios">Service de caja</p><p href="#servicios">Chapa y pintura</p><p href="#servicios">Sacabollos</p><p href="#servicios">Polarizado</p>
           </div>
           <div className="footer-column footer-contact">
             <h3>Contacto</h3>
