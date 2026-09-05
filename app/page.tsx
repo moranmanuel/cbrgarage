@@ -82,7 +82,9 @@ export default function Home() {
               <div className="service-top"><Icon size={27} strokeWidth={1.7} /><span>{number}</span></div>
               <h3>{title}</h3><p>{text}</p>
               <a
-                href={`https://wa.me/5491150526325?text=${encodeURIComponent(`Hola CBR Garage! Necesito un servicio de ${title.toLowerCase()} para mi auto.`)}`}
+                href={`https://wa.me/5491150526325?text=${encodeURIComponent(
+                  `Hola CBR Garage! Necesito ${title.startsWith('Service') ? title.toLowerCase() : `un servicio de ${title.toLowerCase()}`} para mi auto.`
+                )}`}
                 target="_blank"
                 rel="noreferrer"
               >
