@@ -27,7 +27,18 @@ const services = [
   { icon: ShieldCheck, number: '07', title: 'Cambio de cristales', text: 'Reemplazo seguro de parabrisas y cristales, con respaldo y garantía.' },
 ];
 
-const brands = ['Honda', 'Toyota', 'Nissan', 'Subaru', 'Suzuki', 'Mazda', 'Mitsubishi', 'Ford', 'BMW', 'Mercedes-Benz'];
+const brands = [
+  { name: 'Honda', logo: 'https://cdn.simpleicons.org/honda/9b9b9b' },
+  { name: 'Toyota', logo: 'https://cdn.simpleicons.org/toyota/9b9b9b' },
+  { name: 'Nissan', logo: 'https://cdn.simpleicons.org/nissan/9b9b9b' },
+  { name: 'Subaru', logo: 'https://cdn.simpleicons.org/subaru/9b9b9b' },
+  { name: 'Suzuki', logo: 'https://cdn.simpleicons.org/suzuki/9b9b9b' },
+  { name: 'Mazda', logo: 'https://cdn.simpleicons.org/mazda/9b9b9b' },
+  { name: 'Mitsubishi', logo: 'https://cdn.simpleicons.org/mitsubishi/9b9b9b' },
+  { name: 'Ford', logo: 'https://cdn.simpleicons.org/ford/9b9b9b' },
+  { name: 'BMW', logo: 'https://cdn.simpleicons.org/bmw/9b9b9b' },
+  { name: 'Mercedes-Benz', logo: 'https://cdn.worldvectorlogo.com/logos/mercedes-benz-9.svg' },
+];
 
 export default function Home() {
   return (
@@ -109,7 +120,12 @@ export default function Home() {
           <p>Mecánica general y diagnóstico para vehículos nacionales e importados.</p>
         </div>
         <div className="brand-wall" aria-label="Marcas que atendemos">
-          {brands.map((brand, index) => <span key={brand} data-index={String(index + 1).padStart(2, '0')}>{brand}</span>)}
+          {brands.map(({ name, logo }) => (
+            <div className="brand-item" key={name}>
+              <img src={logo} alt={`Logo de ${name}`} loading="lazy" />
+              <span>{name}</span>
+            </div>
+          ))}
         </div>
       </section>
 
