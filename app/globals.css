@@ -6,7 +6,7 @@ html { scroll-behavior:smooth; }
 body { margin:0; background:var(--ink); color:#fff; font-family:var(--font-body),Arial,sans-serif; }
 a { color:inherit; text-decoration:none; }
 button,a { -webkit-tap-highlight-color:transparent; }
-.site-header { height:82px; max-width:1440px; margin:0 auto; padding:0 5vw; display:flex; align-items:center; border-bottom:1px solid var(--line); background:rgba(8,11,15,.92); position:sticky; top:0; z-index:20; backdrop-filter:blur(16px); }
+.site-header { height:82px; max-width:100%; margin:0 auto; padding:0 5vw; display:flex; align-items:center; border-bottom:1px solid var(--line); background:rgba(8,11,15,.92); position:sticky; top:0; z-index:20; backdrop-filter:blur(16px); }
 .brand { display:inline-flex; align-items:center; width:fit-content; }
 .brand-logo { display:block; width:auto; height:64px; object-fit:contain; }
 nav { margin-left:auto; display:flex; justify-content:flex-end; gap:2.2rem; font-size:.88rem; color:#c8cdd2; }
