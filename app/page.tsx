@@ -60,7 +60,7 @@ export default function Home() {
           <div className="hero-actions">
             <a
               className="button button-primary"
-              href={`https://wa.me/5491150526325?text=${encodeURIComponent('🚘 Hola CBR! Quiero reservar un turno.\n\nVehículo:\nServicio:\nFecha preferida:')}`}
+              href={`https://wa.me/5491154194819?text=${encodeURIComponent('🚘 Hola CBR! Quiero reservar un turno.\n\nVehículo:\nServicio:\nFecha preferida:')}`}
               target="_blank"
               rel="noreferrer"
             >
@@ -97,7 +97,7 @@ export default function Home() {
               <div className="service-top"><Icon size={27} strokeWidth={1.7} /><span>{number}</span></div>
               <h3>{title}</h3><p>{text}</p>
               <a
-                href={`https://wa.me/5491150526325?text=${encodeURIComponent(
+                href={`https://wa.me/5491154194819?text=${encodeURIComponent(
                   `Hola CBR Garage! Necesito ${title.startsWith('Service') ? title.toLowerCase() : `un servicio de ${title.toLowerCase()}`} para mi auto.`
                 )}`}
                 target="_blank"
@@ -110,7 +110,7 @@ export default function Home() {
           <article className="service-card service-card-cta">
             <span>Compra y venta</span><h3>¿Querés comprar o vender tu auto?</h3>
             <a
-              href={`https://wa.me/5491150526325?text=${encodeURIComponent('Hola CBR Garage! Quisiera consultar por el servicio de compra y venta de vehículos.')}`}
+              href={`https://wa.me/5491154194819?text=${encodeURIComponent('Hola CBR Garage! Quisiera consultar por el servicio de compra y venta de vehículos.')}`}
               target="_blank"
               rel="noreferrer"
             >
@@ -170,7 +170,7 @@ export default function Home() {
 
       <a
         className="whatsapp-float"
-        href="https://wa.me/5491150526325?text=%F0%9F%9A%98%20Hola%20CBR!%20Me%20gustar%C3%ADa%20consultar%20sobre%20sus%20servicios%20de%20taller%20premium."
+        href="https://wa.me/5491154194819?text=%F0%9F%9A%98%20Hola%20CBR!%20Me%20gustar%C3%ADa%20consultar%20sobre%20sus%20servicios%20de%20taller%20premium."
         target="_blank"
         rel="noreferrer"
         aria-label="Consultar a CBR Garage por WhatsApp"
@@ -190,7 +190,7 @@ export default function Home() {
               <a href="https://www.instagram.com/cbrgarage.ba/" target="_blank" rel="noreferrer" aria-label="CBR Garage en Instagram">
                 <svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true"><path fill="none" stroke="currentColor" strokeWidth="2" d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Z"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" strokeWidth="2"/><circle cx="18" cy="6" r="1" fill="currentColor"/></svg>
               </a>
-              <a href="https://wa.me/5491150526325?text=Hola%20CBR%20Garage" target="_blank" rel="noreferrer" aria-label="Escribir por WhatsApp"><MessageCircle size={19} /></a>
+              <a href="https://wa.me/5491154194819?text=Hola%20CBR%20Garage" target="_blank" rel="noreferrer" aria-label="Escribir por WhatsApp"><MessageCircle size={19} /></a>
               <a href="mailto:Cbrgarage23@gmail.com" aria-label="Enviar email"><Mail size={19} /></a>
             </div>
           </div>
@@ -205,7 +205,7 @@ export default function Home() {
           <div className="footer-column footer-contact">
             <h3>Contacto</h3>
             <a href="https://www.google.com/maps/search/?api=1&query=Darwin+238+CABA+Argentina" target="_blank" rel="noreferrer"><MapPin size={18} /><span>Darwin 238, CABA</span></a>
-            <a href="tel:+541150526325"><Phone size={18} /><span>11 5419-4819</span></a>
+            <a href="tel:+541154194819"><Phone size={18} /><span>11 5419-4819</span></a>
             <a href="mailto:Cbrgarage23@gmail.com"><Mail size={18} /><span>Cbrgarage23@gmail.com</span></a>
             <div><Clock3 size={18} /><span>Lunes a viernes<br />8:00–17:00</span></div>
           </div>
