@@ -210,7 +210,7 @@ export default function Home() {
             <div><Clock3 size={18} /><span>Lunes a viernes<br />8:00–17:00</span></div>
           </div>
         </div>
-        <div className="footer-bottom"><small>© 2026 CBR Garage. Todos los derechos reservados.</small><a href="#inicio">Volver arriba ↑</a></div>
+        <div className="footer-bottom"><small>© 2026 CBR Garage. Todos los derechos reservados.</small></div>
       </footer>
     </main>
   );
